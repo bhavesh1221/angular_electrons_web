@@ -29,7 +29,7 @@ export class CartComponent implements OnInit {
       id: 1,
       img1: 'assets/images/JBL_E55BT_KEY_BLACK_6175_FS_x1-1605x1605px.png',
       img2: 'assets/images/JBL_LIVE650BTNC_Product Image_Folded_Black.webp',
-      prodname: 'JBL Quantum 400',
+      prodname: 'JBL E55BT KEY BLACK',
       price1: '$300',
       price2: '$200'
     },
@@ -37,7 +37,7 @@ export class CartComponent implements OnInit {
       id: 2,
       img1: 'assets/images/JBL_JR 310BT_Product Image_Hero_Skyblue.png',
       img2: 'assets/images/JBL_JR 310BT_Product Image_Detail_Skyblue.png',
-      prodname: 'JBL Quantum 400',
+      prodname: 'JBL JR 310BT',
       price1: '$300',
       price2: '$200'
     },
@@ -45,7 +45,7 @@ export class CartComponent implements OnInit {
       id: 3,
       img1: 'assets/images/kisspng-beats-electronics-headphones-apple-beats-studio-red-headphones.png',
       img2: 'assets/images/JBL_E55BT_KEY_RED_6063_FS_x1-1605x1605px.webp',
-      prodname: 'JBL Quantum 400',
+      prodname: 'JBL Endurance SPRINT',
       price1: '$300',
       price2: '$200'
     }

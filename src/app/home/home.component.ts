@@ -12,6 +12,7 @@ import { PopupComponent } from './popup/popup.component';
 export class HomeComponent implements OnInit {
   slide_index = 0
   dataToShowOnCards: any = []
+  prodCount = 0;
   slide_play = true
   // cardsData = [
   //   {
@@ -75,9 +76,13 @@ export class HomeComponent implements OnInit {
     
    
     onAdd(data: any){
-      console.log(data);
+      this.prodCount++;
+      console.log("prodcounttt",this.prodCount);
+      
+      // console.log(data);
       this.cartDataArray.push(data)
       this.data.updateData(this.cartDataArray)
+      this.data.funProdCount(this.prodCount)
     }
 
 

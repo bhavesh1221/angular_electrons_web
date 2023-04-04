@@ -101,7 +101,7 @@
         </div>
         <div class="container " id="latest-products">
             <div class="d-flex justify-content-center align-items-center">
-                <div *ngFor="let product of dataToShowOnCards; let i = index" class="product-card border me-3"> {{product.id}}
+                <div *ngFor="let product of dataToShowOnCards; let i = index" class="product-card border me-3">
                     <div class="product-card-img">
                         <img src="{{product.img1}}" alt="img">
                         <img src="{{product.img2}}" alt="img">
@@ -116,6 +116,7 @@
                                 <i class='bx bxs-heart'></i>
                             </button>
                         </div>
+                        <div>Click on Add Button to Add Product in the Cart</div>
                         <div class="product-card-name">
                             {{product.prodname}}
                         </div>

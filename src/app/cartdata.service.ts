@@ -5,10 +5,15 @@ import { BehaviorSubject } from 'rxjs';
 })
 export class CartdataService {
   private data = new BehaviorSubject<any>([]);
+  private count = new BehaviorSubject<any>([]);
   public shareData = this.data.asObservable();
+  public prodCount = this.count.asObservable();
   constructor() { }
   updateData(num:any){
     this.data.next(num);
+  }
+  funProdCount(cntParam:any){
+    this.count.next(cntParam);
   }
   // getCartData(){
   //   return [

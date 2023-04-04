@@ -9,11 +9,18 @@ import { CartdataService } from './cartdata.service';
 export class AppComponent {
   title = 'electrons';
   cartData = []
+  countProd = 0;
+
   cartLeng = 0
   constructor(private data: CartdataService) { }
 
-  gnOnInit(): void {
+  ngOnInit(): void {
     this.data.shareData.subscribe(data => this.cartData = data)
+    this.data.prodCount.subscribe((data) => {
+      console.log("appcompoData",data);
+      this.countProd = data
+    })
+
     console.log(this.cartData);
     this.cartLeng = this.cartData.length
   }
