@@ -16,5 +16,16 @@
   <body class="mat-typography">
     <app-root></app-root>
   <script src="runtime.e30eb6e2b5cc8765.js" type="module"></script><script src="polyfills.2fb491cbcdbf19b1.js" type="module"></script><script src="main.a495de95007ca657.js" type="module"></script>
-  
+  <script>
+    var segmentCount = 1;
+
+      var l = window.location;
+      l.replace(
+        l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+        l.pathname.split('/').slice(0, 1 + segmentCount).join('/') + '/?p=/' +
+        l.pathname.slice(1).split('/').slice(segmentCount).join('/').replace(/&/g, '~and~') +
+        (l.search ? '&q=' + l.search.slice(1).replace(/&/g, '~and~') : '') +
+        l.hash
+      );
+    </script>
   </body></html>
